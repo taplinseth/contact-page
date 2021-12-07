@@ -1,3 +1,4 @@
-function mysubmit() {
-    console.log("yes")
+function mysubmit(event) {
+    event.preventDefault();
+    console.log("test");
 }
