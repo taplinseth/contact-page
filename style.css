@@ -5,8 +5,7 @@ form {
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
     font: 12px Georgia, "Times New Roman", Times, serif;
-    color: #888;
-    text-shadow: 1px 1px 1px #FFF;
+    color: black;
     border:1px solid #E4E4E4;
 }
 h1 {
@@ -15,7 +14,7 @@ h1 {
     display: block;
     border-bottom:1px solid #E4E4E4;
     margin: -10px -15px 30px -10px;;
-    color: #888;
+    color: black;
 }
 h1>span {
     display: block;
@@ -31,7 +30,23 @@ label>span {
     text-align: right;
     padding-right: 10px;
     margin-top: 10px;
-    color: #888;
+    color:black;
+}
+
+.contact-label {
+    display: flex;
+}
+.how-text {
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+.contact-text {
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.dob-text {
+    margin-top: -5px;
 }
 input[type="text"], input[type="email"], textarea, select {
     border: 1px solid #DADADA;
@@ -56,6 +71,7 @@ textarea{
     height:100px;
 }
 .button {
+    margin-top: 15px;
     background: #E27575;
     border: none;
     padding: 10px 25px 10px 25px;
@@ -67,4 +83,19 @@ textarea{
 }
 .button:hover {
     background: #CF7A7A
+}
+
+@media (max-width: 550px) {
+
+    body {
+        background-color: #CF7A7A;
+        color: black;
+    }
+
+    form {
+        background-color: coral;
+    }
+    .contact-label {
+        margin-top: 55px;
+    }
 }
