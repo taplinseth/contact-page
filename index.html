@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit="mysubmit(event)" action="" name="testForm" class="STYLE-NAME">
+    <form onsubmit="mysubmit(event)" method="GET" action="result.html" enctype="multipart/form-data" name="testForm" class="STYLE-NAME">
         <h1 >Contact Form 
             <span>Please fill all the texts in the fields.</span>
         </h1>
@@ -38,7 +38,7 @@
         
         <label>
             <span>Would you like to be contacted?</span>
-            <input type="radio" id="yes" />
+            <input type="radio" id="yes" name="contact"/>
             <label for="yes">Yes</label>
             <input type="radio" id="no" />
             <label for="no">No</label>
@@ -46,7 +46,7 @@
 
         <label>
             <span>Date of birth for birthday wish:</span>
-            <input type="date" id="birthday" />
+            <input type="date" id="birthday" name="DOB" />
         </label>
             
 
